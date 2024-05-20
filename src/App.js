@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "./App.css";
+import LandingPage from "./components/LandingPage";
+import UrgencyPage from "./components/UrgencyPage";
+import ThankYouPage from "./components/ThankYouPage";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import EmbeddedButtonContainer from "./components/EmbeddedButtonContainer";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import TermsAndConditions from "./components/TermsAndConditions";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="">
+      <Header />
+        
+        <Routes>
+          <Route exact path="/" element={<LandingPage />} />
+          <Route path="/book-call" element={<UrgencyPage/>} />
+          <Route path="/thankyou" element={<ThankYouPage/>} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
+          <Route path="/terms-and-conditions" element={<TermsAndConditions/>} />
+          
+        </Routes>
+        <Footer/>
+      </div>
+    </Router>
   );
 }
 
