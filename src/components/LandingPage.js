@@ -60,7 +60,7 @@ export default function LandingPage() {
         console.error("Error submitting form:", error);
       });
      
-      navigate('/urgency');
+      navigate('/book-call');
   };
   
   return (
