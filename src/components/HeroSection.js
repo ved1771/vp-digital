@@ -56,8 +56,10 @@ const HeroSection = () => {
       <div className=" max-w-xs pt-7 pb-7 ">
         <div className="text-xl font-semibold mb-3">Whats Included : </div>
         <ul className="">
-          <li className="pb-2">✅ Wrodpress website upto 5 pages </li>
+          <li className="pb-2">✅ website upto 5 pages </li>
           <li className="pb-2"> ✅ Custom Developemnt</li>
+          <li className="pb-2"> ✅ Mobile responsive</li>
+          <li className="pb-2"> ✅ SEO Friendly</li>
           <li className="pb-2"> ✅ 3 revision</li>
           <li className="pb-2"> ✅ Perimiun theam (worth off 100$)</li>
           <li className="pb-2"> ✅ Answer to your big question: why we offer free website? 🧐 </li>
