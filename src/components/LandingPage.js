@@ -65,7 +65,6 @@ export default function LandingPage() {
   
   return (
     <div className="bg-slate-100 ">
-      Impact-Site-Verification: 696a80e9-52a7-4292-b5c3-911c474abccd
       <div className="flex py-32 m-auto flex-col md:flex-row">
         <HeroSection />
         <div className=" px-8 pt-1 md:pt-0">
